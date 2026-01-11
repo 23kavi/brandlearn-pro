@@ -23,10 +23,10 @@ const ContactSection = () => {
               Email Us
             </h3>
             <a
-              href="mailto:info@ugs.com"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              href="mailto:join@ugs-carrer.com"
+              className="text-muted-foreground hover:text-primary transition-colors break-all"
             >
-              info@unbreakablegrowthskills.com
+              join@ugs-carrer.com
             </a>
           </div>
 
@@ -38,10 +38,10 @@ const ContactSection = () => {
               Call Us
             </h3>
             <a
-              href="tel:+919876543210"
+              href="tel:+918800129363"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
-              +91 98765 43210
+              +91 88001 29363
             </a>
           </div>
 
@@ -50,11 +50,16 @@ const ContactSection = () => {
               <MapPin className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-2">
-              Visit Us
+              Inquiry Form
             </h3>
-            <p className="text-muted-foreground">
-              Mumbai, Maharashtra, India
-            </p>
+            <a
+              href="https://forms.gle/u6NW9tWMGFczmoR38"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              Fill Inquiry Form →
+            </a>
           </div>
         </div>
       </div>

@@ -3,27 +3,27 @@ import { Target, Users, Award, Lightbulb } from "lucide-react";
 const features = [
   {
     icon: Target,
-    title: "Industry-Focused",
+    title: "Industry-Led Curriculum",
     description:
-      "Curriculum designed with industry experts to ensure you learn skills that employers actually need.",
+      "Curriculum designed by MNC experts to ensure you learn job-ready skills that employers actually need.",
   },
   {
     icon: Users,
-    title: "Expert Mentors",
+    title: "MNC Expert Trainers",
     description:
-      "Learn from professionals with years of real-world experience in their respective fields.",
+      "Learn from 25+ professionals with years of real-world experience from top multinational companies.",
   },
   {
     icon: Award,
-    title: "Certified Programs",
+    title: "100% Placement Support",
     description:
-      "Earn recognized certifications that add value to your resume and career prospects.",
+      "Get career guidance, interview preparation, and placement assistance to land your dream job.",
   },
   {
     icon: Lightbulb,
-    title: "Practical Learning",
+    title: "Hands-on Training",
     description:
-      "Hands-on projects and real-world case studies to build your portfolio and confidence.",
+      "Live online sessions, capstone projects, and paid project opportunities to build your portfolio.",
   },
 ];
 
@@ -63,16 +63,24 @@ const AboutSection = () => {
           ))}
         </div>
 
-        {/* Mission Statement */}
-        <div className="mt-16 bg-gradient-primary rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-            Our Mission
-          </h3>
-          <p className="text-primary-foreground/90 text-lg max-w-2xl mx-auto">
-            To bridge the gap between education and employment by providing
-            accessible, high-quality skill development programs that empower
-            individuals to achieve their career aspirations.
-          </p>
+        {/* Vision & Mission */}
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          <div className="bg-gradient-primary rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+              Our Vision
+            </h3>
+            <p className="text-primary-foreground/90 text-lg">
+              To make quality, career-focused education accessible to all.
+            </p>
+          </div>
+          <div className="bg-card border border-primary/20 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Our Mission
+            </h3>
+            <p className="text-muted-foreground text-lg">
+              To train students with real-world skills and make them job-ready through expert-led bootcamps in just 4 months.
+            </p>
+          </div>
         </div>
       </div>
     </section>

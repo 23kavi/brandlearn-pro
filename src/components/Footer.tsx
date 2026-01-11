@@ -63,9 +63,26 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-primary-foreground/70">
-              <li>info@unbreakablegrowthskills.com</li>
-              <li>+91 98765 43210</li>
-              <li>Mumbai, Maharashtra</li>
+              <li>
+                <a href="mailto:join@ugs-carrer.com" className="hover:text-primary-foreground transition-colors">
+                  join@ugs-carrer.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+918800129363" className="hover:text-primary-foreground transition-colors">
+                  +91 88001 29363
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://forms.gle/u6NW9tWMGFczmoR38" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-foreground transition-colors"
+                >
+                  Inquiry Form →
+                </a>
+              </li>
             </ul>
           </div>
         </div>

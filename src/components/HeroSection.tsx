@@ -39,9 +39,7 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            Join thousands of learners who have transformed their careers with
-            our industry-leading courses. Master in-demand skills with expert
-            guidance and hands-on projects.
+            UGS bridges the gap between education and employability. We train students in tech and non-tech domains with MNC expert trainers, live projects, and 100% placement support.
           </p>
 
           {/* CTA Buttons */}
@@ -66,16 +64,16 @@ const HeroSection = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-primary">5K+</p>
-              <p className="text-sm text-muted-foreground mt-1">Students</p>
+              <p className="text-3xl md:text-4xl font-bold text-primary">25+</p>
+              <p className="text-sm text-muted-foreground mt-1">Expert Trainers</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-primary">20+</p>
+              <p className="text-3xl md:text-4xl font-bold text-primary">4+</p>
               <p className="text-sm text-muted-foreground mt-1">Courses</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-primary">95%</p>
-              <p className="text-sm text-muted-foreground mt-1">Success Rate</p>
+              <p className="text-3xl md:text-4xl font-bold text-primary">100%</p>
+              <p className="text-sm text-muted-foreground mt-1">Placement Support</p>
             </div>
           </div>
         </div>
