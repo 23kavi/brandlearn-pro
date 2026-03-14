@@ -8,8 +8,9 @@ const Header = () => {
 
   const navLinks = [
     { href: "#home", label: "Home" },
+    { href: "#clubs", label: "Clubs" },
+    { href: "#how-it-works", label: "How It Works" },
     { href: "#about", label: "About" },
-    { href: "#courses", label: "Courses" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -17,12 +18,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <img src={logo} alt="UGS - Unbreakable Growth Skills" className="h-12 w-auto" />
+            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto" />
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -35,14 +34,12 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="lg" asChild>
-              <a href="#enroll">Enroll Now</a>
+              <a href="#contact">Partner With Us</a>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -52,7 +49,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <nav className="flex flex-col gap-4">
@@ -67,8 +63,8 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" size="lg" className="mt-2" asChild>
-                <a href="#enroll" onClick={() => setIsMenuOpen(false)}>
-                  Enroll Now
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                  Partner With Us
                 </a>
               </Button>
             </nav>
