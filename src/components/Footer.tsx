@@ -7,59 +7,32 @@ const Footer = () => {
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* Logo & Description */}
           <div className="md:col-span-2">
-            <img
-              src={logo}
-              alt="UGS - Unbreakable Growth Skills"
-              className="h-12 w-auto mb-4 brightness-0 invert"
-            />
+            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/70 max-w-md">
-              Empowering individuals with unbreakable skills for unstoppable
-              growth. Join us on your journey to success.
+              United Global Scholars — building a global network of student clubs and leadership programs to nurture innovation, creativity, and entrepreneurial thinking.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="#home"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#courses"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Courses
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
+              {[
+                { href: "#home", label: "Home" },
+                { href: "#clubs", label: "Clubs" },
+                { href: "#how-it-works", label: "How It Works" },
+                { href: "#about", label: "About" },
+                { href: "#contact", label: "Contact" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-primary-foreground/70">
@@ -74,38 +47,22 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://forms.gle/u6NW9tWMGFczmoR38" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Inquiry Form →
+                <a href="https://forms.gle/u6NW9tWMGFczmoR38" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  Partnership Form →
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © {currentYear} Unbreakable Growth Skills. All rights reserved.
+              © {currentYear} United Global Scholars. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-              >
-                Terms of Service
-              </a>
+              <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</a>
+              <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
