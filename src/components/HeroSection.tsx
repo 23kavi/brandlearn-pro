@@ -18,7 +18,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-8 animate-fade-in">
             <Sparkles size={16} />
             <span className="text-sm font-medium">
-              Partnering with Schools to Build Future Leaders
+              Leadership, Innovation, and Creativity Beyond Classrooms
             </span>
           </div>
 
