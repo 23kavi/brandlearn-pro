@@ -26,16 +26,6 @@ const clubs = [
     title: "Public Speaking & Debate Club",
     description: "Build confidence, articulation, critical thinking, and persuasion through speaking and debate.",
   },
-  {
-    icon: Globe,
-    title: "Global Citizenship & Social Impact Club",
-    description: "Engage with real-world challenges, sustainability, community service, and cross-cultural awareness to become responsible global citizens.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Wellness & Mindfulness Club",
-    description: "Cultivate emotional intelligence, mental health awareness, mindfulness practices, and holistic well-being for a balanced student life.",
-  },
 ];
 
 const ClubsSection = () => {
