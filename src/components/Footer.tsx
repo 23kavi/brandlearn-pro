@@ -6,9 +6,27 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
+        {/* Founders Section */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-primary-foreground/10 rounded-2xl p-6">
+            <h4 className="font-semibold text-lg mb-1">Kavita Bharti</h4>
+            <p className="text-primary-foreground/60 text-sm mb-3">Founder</p>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              A visionary educator and changemaker, Kavita believes every student carries a spark waiting to be ignited. With a passion for redefining how schools nurture talent, she founded UGS to bridge the gap between academics and real-world skills — empowering young minds to lead, create, and innovate fearlessly.
+            </p>
+          </div>
+          <div className="bg-primary-foreground/10 rounded-2xl p-6">
+            <h4 className="font-semibold text-lg mb-1">Nidhi Gupta</h4>
+            <p className="text-primary-foreground/60 text-sm mb-3">Co-Founder</p>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              Nidhi brings a unique blend of strategic thinking and deep empathy for student development. Driven by the belief that leadership is learned through experience, she co-founded UGS to build structured ecosystems where students discover their strengths and grow into confident global scholars.
+            </p>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/70 max-w-md">
               United Global Scholars — building a global network of student clubs and leadership programs to nurture innovation, creativity, and entrepreneurial thinking.
             </p>

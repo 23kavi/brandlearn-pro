@@ -1,4 +1,4 @@
-import { Cpu, Briefcase, Palette, Medal, Mic } from "lucide-react";
+import { Cpu, Briefcase, Palette, Medal, Mic, Globe } from "lucide-react";
 
 const clubs = [
   {
@@ -25,6 +25,11 @@ const clubs = [
     icon: Mic,
     title: "Public Speaking & Debate Club",
     description: "Build confidence, articulation, critical thinking, and persuasion through speaking and debate.",
+  },
+  {
+    icon: Globe,
+    title: "Global Citizenship & Social Impact Club",
+    description: "Engage with real-world challenges, sustainability, community service, and cross-cultural awareness to become responsible global citizens.",
   },
 ];
 
