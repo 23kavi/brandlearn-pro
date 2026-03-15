@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/70 max-w-md">
               United Global Scholars — building a global network of student clubs and leadership programs to nurture innovation, creativity, and entrepreneurial thinking.
             </p>
