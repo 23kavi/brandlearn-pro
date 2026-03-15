@@ -1,4 +1,4 @@
-import { Cpu, Briefcase, Palette, Medal, Mic, Globe, HeartHandshake } from "lucide-react";
+import { Cpu, Briefcase, Palette, Medal, Mic } from "lucide-react";
 
 const clubs = [
   {
