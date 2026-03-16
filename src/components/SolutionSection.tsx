@@ -1,4 +1,5 @@
 import { Search, Users, Presentation, Trophy } from "lucide-react";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -31,7 +32,13 @@ const SolutionSection = () => {
   return (
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             The UGS{" "}
             <span className="text-gradient-primary">Student Development System</span>
@@ -39,20 +46,22 @@ const SolutionSection = () => {
           <p className="text-lg text-muted-foreground">
             A proven, structured approach to unlock every student's potential.
           </p>
-        </div>
+        </motion.div>
 
         <div className="max-w-4xl mx-auto relative">
-          {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2" />
 
           <div className="space-y-8 md:space-y-12">
             {steps.map((step, index) => (
-              <div
+              <motion.div
                 key={step.title}
-                className={`flex flex-col md:flex-row items-center gap-6 animate-fade-in ${
+                initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className={`flex flex-col md:flex-row items-center gap-6 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
-                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="flex-1">
                   <div className="bg-card p-6 rounded-xl shadow-card border border-border">
@@ -71,7 +80,7 @@ const SolutionSection = () => {
                 </div>
 
                 <div className="flex-1 hidden md:block" />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

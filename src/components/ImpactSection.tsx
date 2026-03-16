@@ -1,4 +1,5 @@
 import { School, GraduationCap, TrendingUp, Users, Lightbulb, MessageSquare, Heart, Award } from "lucide-react";
+import { motion } from "framer-motion";
 
 const schoolBenefits = [
   { icon: TrendingUp, text: "Stronger student engagement" },
@@ -23,15 +24,26 @@ const ImpactSection = () => {
   return (
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Impact of the <span className="text-gradient-primary">UGS Program</span>
           </h2>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-          {/* For Schools */}
-          <div className="bg-card p-8 rounded-2xl shadow-card border border-border">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-card p-8 rounded-2xl shadow-card border border-border"
+          >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <School className="w-5 h-5 text-primary" /> For Schools
             </h3>
@@ -45,10 +57,15 @@ const ImpactSection = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          {/* For Students */}
-          <div className="bg-card p-8 rounded-2xl shadow-card border border-border">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-card p-8 rounded-2xl shadow-card border border-border"
+          >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <GraduationCap className="w-5 h-5 text-accent" /> For Students
             </h3>
@@ -62,11 +79,16 @@ const ImpactSection = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Metrics */}
-        <div className="bg-gradient-primary rounded-2xl p-10 max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-gradient-primary rounded-2xl p-10 max-w-3xl mx-auto"
+        >
           <div className="grid grid-cols-3 gap-6 text-center">
             {metrics.map((m) => (
               <div key={m.label}>
@@ -75,7 +97,7 @@ const ImpactSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
