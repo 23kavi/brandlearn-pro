@@ -5,7 +5,9 @@ import SolutionSection from "@/components/SolutionSection";
 import ClubsSection from "@/components/ClubsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import ProgramStructureSection from "@/components/ProgramStructureSection";
+import BenefitsSection from "@/components/BenefitsSection";
 import ImpactSection from "@/components/ImpactSection";
+import FreeTrialSection from "@/components/FreeTrialSection";
 import TrainersSection from "@/components/TrainersSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PilotSection from "@/components/PilotSection";
@@ -25,7 +27,9 @@ const Index = () => {
         <ClubsSection />
         <HowItWorksSection />
         <ProgramStructureSection />
+        <BenefitsSection />
         <ImpactSection />
+        <FreeTrialSection />
         <TrainersSection />
         <TestimonialsSection />
         <PilotSection />
