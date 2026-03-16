@@ -1,5 +1,6 @@
-import { ArrowRight, Sparkles, GraduationCap } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -15,31 +16,42 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-8 animate-fade-in">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-8"
+          >
             <Sparkles size={16} />
             <span className="text-sm font-medium">
               Leadership, Innovation, and Creativity Beyond Classrooms
             </span>
-          </div>
+          </motion.div>
 
-          <h1
-            className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight animate-fade-in"
-            style={{ animationDelay: "0.1s" }}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight"
           >
             Empowering the Next Generation of{" "}
             <span className="text-gradient-primary">Global Scholars</span>
-          </h1>
+          </motion.h1>
 
-          <p
-            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in"
-            style={{ animationDelay: "0.2s" }}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
             UGS partners with schools to create structured student clubs where learners explore innovation, entrepreneurship, creativity, sports, and leadership beyond traditional academics.
-          </p>
+          </motion.p>
 
-          <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
-            style={{ animationDelay: "0.3s" }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
@@ -50,11 +62,13 @@ const HeroSection = () => {
             <Button variant="hero-outline" size="xl" asChild>
               <a href="#pilot">Start a Pilot Program</a>
             </Button>
-          </div>
+          </motion.div>
 
-          <div
-            className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto animate-fade-in"
-            style={{ animationDelay: "0.4s" }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto"
           >
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-primary">500+</p>
@@ -68,7 +82,7 @@ const HeroSection = () => {
               <p className="text-3xl md:text-4xl font-bold text-primary">10+</p>
               <p className="text-sm text-muted-foreground mt-1">Skills Explored</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

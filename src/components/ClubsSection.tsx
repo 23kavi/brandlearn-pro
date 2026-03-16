@@ -1,4 +1,5 @@
 import { Cpu, Briefcase, Palette, Medal, Mic } from "lucide-react";
+import { motion } from "framer-motion";
 
 const clubs = [
   {
@@ -32,21 +33,30 @@ const ClubsSection = () => {
   return (
     <section id="clubs" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             UGS <span className="text-gradient-primary">Student Clubs</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Interest-based clubs that let students explore, create, and lead.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {clubs.map((club, index) => (
-            <div
+            <motion.div
               key={club.title}
-              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
             >
               <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                 <club.icon className="w-7 h-7 text-primary-foreground" />
@@ -57,7 +67,7 @@ const ClubsSection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {club.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

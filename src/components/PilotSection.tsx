@@ -1,5 +1,6 @@
 import { ClipboardList, Settings, CalendarCheck, Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const pilotFeatures = [
   { icon: ClipboardList, text: "Student interest survey" },
@@ -12,7 +13,13 @@ const PilotSection = () => {
   return (
     <section id="pilot" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-gradient-cta rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto bg-gradient-cta rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"
+        >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent)] pointer-events-none" />
           
           <div className="relative z-10">
@@ -24,13 +31,20 @@ const PilotSection = () => {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-              {pilotFeatures.map((feature) => (
-                <div key={feature.text} className="text-center">
+              {pilotFeatures.map((feature, index) => (
+                <motion.div
+                  key={feature.text}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
+                  className="text-center"
+                >
                   <div className="w-12 h-12 bg-primary-foreground/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <feature.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <p className="text-primary-foreground/90 text-sm font-medium">{feature.text}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
 
@@ -45,7 +59,7 @@ const PilotSection = () => {
               </a>
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
