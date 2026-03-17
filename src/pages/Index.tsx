@@ -1,20 +1,29 @@
+import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import ClubsSection from "@/components/ClubsSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import ProgramStructureSection from "@/components/ProgramStructureSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import ImpactSection from "@/components/ImpactSection";
-import FreeTrialSection from "@/components/FreeTrialSection";
-import TrainersSection from "@/components/TrainersSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import PilotSection from "@/components/PilotSection";
-import AboutSection from "@/components/AboutSection";
-import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+
+// Lazy-load below-the-fold sections for faster initial paint
+const ProblemSection = lazy(() => import("@/components/ProblemSection"));
+const SolutionSection = lazy(() => import("@/components/SolutionSection"));
+const ClubsSection = lazy(() => import("@/components/ClubsSection"));
+const HowItWorksSection = lazy(() => import("@/components/HowItWorksSection"));
+const ProgramStructureSection = lazy(() => import("@/components/ProgramStructureSection"));
+const BenefitsSection = lazy(() => import("@/components/BenefitsSection"));
+const ImpactSection = lazy(() => import("@/components/ImpactSection"));
+const FreeTrialSection = lazy(() => import("@/components/FreeTrialSection"));
+const TrainersSection = lazy(() => import("@/components/TrainersSection"));
+const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
+const PilotSection = lazy(() => import("@/components/PilotSection"));
+const AboutSection = lazy(() => import("@/components/AboutSection"));
+const FAQSection = lazy(() => import("@/components/FAQSection"));
+const ContactSection = lazy(() => import("@/components/ContactSection"));
+const Footer = lazy(() => import("@/components/Footer"));
+
+const SectionFallback = () => (
+  <div className="py-20 flex items-center justify-center">
+    <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const Index = () => {
   return (
@@ -22,22 +31,26 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <ClubsSection />
-        <HowItWorksSection />
-        <ProgramStructureSection />
-        <BenefitsSection />
-        <ImpactSection />
-        <FreeTrialSection />
-        <TrainersSection />
-        <TestimonialsSection />
-        <PilotSection />
-        <AboutSection />
-        <FAQSection />
-        <ContactSection />
+        <Suspense fallback={<SectionFallback />}>
+          <ProblemSection />
+          <SolutionSection />
+          <ClubsSection />
+          <HowItWorksSection />
+          <ProgramStructureSection />
+          <BenefitsSection />
+          <ImpactSection />
+          <FreeTrialSection />
+          <TrainersSection />
+          <TestimonialsSection />
+          <PilotSection />
+          <AboutSection />
+          <FAQSection />
+          <ContactSection />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={<SectionFallback />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
