@@ -1,4 +1,4 @@
-import { Mail, Phone, ExternalLink, ArrowRight } from "lucide-react";
+import { Mail, Phone, ExternalLink, ArrowRight, MessageCircle, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
