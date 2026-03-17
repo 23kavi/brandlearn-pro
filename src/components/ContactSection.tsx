@@ -26,6 +26,8 @@ const ContactSection = () => {
             {[
               { icon: Mail, title: "Email Us", content: "join@ugs-carrer.com", href: "mailto:join@ugs-carrer.com" },
               { icon: Phone, title: "Call Us", content: "+91 88001 29363", href: "tel:+918800129363" },
+              { icon: MessageCircle, title: "WhatsApp", content: "Chat with us on WhatsApp", href: "https://wa.me/918800129363", external: true },
+              { icon: Instagram, title: "Instagram", content: "@ugs.careers", href: "https://instagram.com/ugs.careers", external: true },
               { icon: ExternalLink, title: "Partnership Inquiry", content: "Fill Partnership Form →", href: "https://forms.gle/u6NW9tWMGFczmoR38", external: true },
             ].map((item, index) => (
               <motion.div
