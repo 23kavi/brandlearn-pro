@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const phases = [
-  { weeks: "Week 1–2", title: "Interest Discovery & Club Formation", description: "Students complete surveys and clubs are organized based on interests." },
-  { weeks: "Week 3–10", title: "Weekly Club Sessions", description: "Trainer-led interactive sessions with skill-building activities and projects." },
-  { weeks: "Week 11", title: "Project Development", description: "Students work on their final projects with mentor guidance." },
-  { weeks: "Week 12", title: "Student Showcase Event", description: "Students present their projects in a grand showcase celebration." },
+  { weeks: "Week 1–2", title: "Discovery & Onboarding", description: "Student profiling, interest mapping, and strategic club formation — tailored to your school." },
+  { weeks: "Week 3–10", title: "Expert-Led Development", description: "Structured weekly sessions with skill-building projects, mentorship, and progressive challenges." },
+  { weeks: "Week 11", title: "Capstone Project Sprint", description: "Students refine their final projects under dedicated mentor guidance — preparing for the spotlight." },
+  { weeks: "Week 12", title: "Grand Showcase & Certification", description: "A prestigious event where students present achievements to parents, faculty, and community leaders." },
 ];
 
 const ProgramStructureSection = () => {
@@ -19,10 +19,10 @@ const ProgramStructureSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Structured <span className="text-gradient-primary">Semester Program</span>
+            The <span className="text-gradient-primary">12-Week Blueprint</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A clear 12-week roadmap designed for maximum student growth.
+            A meticulously designed semester roadmap — engineered for maximum student growth and institutional impact.
           </p>
         </motion.div>
 

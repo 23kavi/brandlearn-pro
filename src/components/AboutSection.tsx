@@ -16,7 +16,7 @@ const AboutSection = () => {
             About <span className="text-gradient-primary">United Global Scholars</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            United Global Scholars is building a global network of student clubs and leadership programs designed to help schools nurture innovation, creativity, leadership, and entrepreneurial thinking.
+            United Global Scholars is India's emerging leader in school-integrated extracurricular development. We build and operate a premium ecosystem of student clubs and leadership programs — so your institution can deliver world-class holistic education without adding a single burden to your team.
           </p>
         </motion.div>
 
@@ -31,7 +31,7 @@ const AboutSection = () => {
             <Rocket className="w-8 h-8 text-primary-foreground mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-primary-foreground mb-4">Our Mission</h3>
             <p className="text-primary-foreground/90 text-lg">
-              To develop future-ready global scholars who can lead, innovate, and create impact in the world.
+              To develop future-ready global scholars who lead with confidence, innovate with purpose, and create lasting impact — starting from school.
             </p>
           </motion.div>
           <motion.div
@@ -44,7 +44,7 @@ const AboutSection = () => {
             <Globe className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
             <p className="text-muted-foreground text-lg">
-              To make quality, globally-aware student development accessible to every school and every student.
+              To become the gold standard in school-partnered student development — accessible to every institution, transformative for every student.
             </p>
           </motion.div>
         </div>
@@ -59,7 +59,7 @@ const AboutSection = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
             Meet Our <span className="text-gradient-primary">Founders</span>
           </h3>
-          <p className="text-muted-foreground">The minds behind the mission</p>
+          <p className="text-muted-foreground">The visionaries driving the mission</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -76,7 +76,7 @@ const AboutSection = () => {
             <h4 className="text-xl font-bold text-foreground mb-1">Kavita Bharti</h4>
             <p className="text-primary text-sm font-medium mb-4">Founder</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              A visionary educator and changemaker, Kavita believes every student carries a spark waiting to be ignited. With a passion for redefining how schools nurture talent, she founded UGS to bridge the gap between academics and real-world skills — empowering young minds to lead, create, and innovate fearlessly.
+              A visionary educator and strategic leader, Kavita founded UGS with a singular conviction: every school deserves a world-class extracurricular framework. Her expertise in education design and student engagement has shaped UGS into a trusted partner for forward-thinking institutions.
             </p>
           </motion.div>
           <motion.div
@@ -92,7 +92,7 @@ const AboutSection = () => {
             <h4 className="text-xl font-bold text-foreground mb-1">Nidhi Gupta</h4>
             <p className="text-primary text-sm font-medium mb-4">Co-Founder</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Nidhi brings a unique blend of strategic thinking and deep empathy for student development. Driven by the belief that leadership is learned through experience, she co-founded UGS to build structured ecosystems where students discover their strengths and grow into confident global scholars.
+              Nidhi brings strategic depth and operational excellence to UGS. With a passion for scalable impact, she architects the systems that ensure every partner school receives a seamless, high-quality experience — from onboarding to student showcase.
             </p>
           </motion.div>
         </div>

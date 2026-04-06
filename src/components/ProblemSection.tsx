@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 const problems = [
   {
     icon: BookOpen,
-    title: "Academic Pressure",
-    description: "Academic pressure limits extracurricular exploration, leaving students without creative outlets.",
+    title: "Academic Overload",
+    description: "Curriculum demands leave little room for holistic development — students miss out on the skills that truly shape their future.",
   },
   {
     icon: Clock,
-    title: "Overloaded Teachers",
-    description: "Teachers are already overloaded with curriculum, making it hard to run extracurricular programs.",
+    title: "Faculty Bandwidth",
+    description: "Your teachers are already stretched thin. Running quality extracurricular programs shouldn't fall on their shoulders.",
   },
   {
     icon: Lightbulb,
-    title: "Untapped Talent",
-    description: "Students have incredible talents but lack structured opportunities to discover and develop them.",
+    title: "Untapped Potential",
+    description: "Every school has future leaders, innovators, and creators — but without the right framework, their talents go undiscovered.",
   },
   {
     icon: Users,
-    title: "Low Engagement",
-    description: "Schools want better student engagement but lack the resources and framework to deliver it.",
+    title: "Engagement Gap",
+    description: "Parents and accreditation bodies expect more than academics. Schools need a structured way to deliver meaningful student engagement.",
   },
 ];
 
@@ -36,11 +36,11 @@ const ProblemSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Students Need Opportunities{" "}
-            <span className="text-gradient-primary">Beyond Academics</span>
+            The Challenges{" "}
+            <span className="text-gradient-primary">Schools Face Today</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Many schools face critical challenges in providing holistic student development.
+            Modern institutions need more than textbooks — they need a partner who delivers holistic student outcomes.
           </p>
         </motion.div>
 

@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const pilotFeatures = [
-  { icon: ClipboardList, text: "Student interest survey" },
-  { icon: Settings, text: "Club setup and management" },
-  { icon: CalendarCheck, text: "Weekly trainer-led sessions" },
-  { icon: Award, text: "Student showcase event" },
+  { icon: ClipboardList, text: "Comprehensive student profiling" },
+  { icon: Settings, text: "Full club setup & management" },
+  { icon: CalendarCheck, text: "12 weeks of expert-led sessions" },
+  { icon: Award, text: "Grand showcase & certification" },
 ];
 
 const PilotSection = () => {
@@ -24,10 +24,10 @@ const PilotSection = () => {
           
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Start With a 3-Month Pilot Program
+              Launch a Risk-Free 3-Month Pilot
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-10 max-w-2xl mx-auto">
-              Schools can test the UGS program before long-term implementation. Experience the impact risk-free.
+              Experience the full UGS framework before making a long-term decision. No risk, no pressure — just measurable results that speak for themselves.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
@@ -54,7 +54,7 @@ const PilotSection = () => {
               asChild
             >
               <a href="#contact">
-                Apply for Pilot Program
+                Apply for Your Pilot Program
                 <ArrowRight size={20} />
               </a>
             </Button>

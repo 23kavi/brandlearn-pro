@@ -8,24 +8,24 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "How much time do clubs require each week?",
-    answer: "Each club session typically runs for 1–2 hours per week, designed to fit within the school schedule without disrupting academics.",
+    question: "How much time does the program require each week?",
+    answer: "Each club session runs for just 1–2 hours per week, carefully designed to integrate seamlessly into your existing school schedule without disrupting academics.",
   },
   {
-    question: "Who manages the club activities?",
-    answer: "All club activities are managed and conducted by UGS's trained facilitators and mentors. Schools only need to provide the space and coordinate scheduling.",
+    question: "Does our faculty need to manage anything?",
+    answer: "Not at all. Every aspect — from planning and materials to session delivery and student evaluation — is fully managed by UGS's certified mentors. Your staff simply coordinates scheduling.",
   },
   {
-    question: "What infrastructure is needed?",
-    answer: "Basic classroom or activity room setup is sufficient. For tech clubs, access to computers is helpful but not mandatory. UGS provides all training materials and resources.",
+    question: "What infrastructure or setup is required?",
+    answer: "A standard classroom or activity room is all you need. For technology clubs, computer access is beneficial but not mandatory. UGS provides all training materials, curricula, and resources.",
   },
   {
-    question: "How many students can participate?",
-    answer: "There's no fixed limit. UGS programs are designed to scale — from small pilot groups of 30 students to school-wide programs with hundreds of participants.",
+    question: "Can the program scale across our entire school?",
+    answer: "Absolutely. UGS programs are architected to scale — from intimate pilot groups of 30 students to institution-wide rollouts with hundreds of participants across multiple clubs.",
   },
   {
-    question: "Is there a trial or pilot option?",
-    answer: "Yes! Schools can start with a 7-day free trial session or a 3-month pilot program to experience the impact before committing to a full semester partnership.",
+    question: "Is there a way to try before we commit?",
+    answer: "Yes. We offer a complimentary 7-day trial session and a 3-month pilot program — giving your institution full visibility into the impact before any long-term commitment.",
   },
 ];
 
@@ -41,8 +41,11 @@ const FAQSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked <span className="text-gradient-primary">Questions</span>
+            Questions <span className="text-gradient-primary">Answered</span>
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Everything school leaders need to know before partnering with UGS.
+          </p>
         </motion.div>
 
         <motion.div

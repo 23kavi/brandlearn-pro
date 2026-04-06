@@ -2,11 +2,11 @@ import { Handshake, ClipboardList, Users, CalendarCheck, Award } from "lucide-re
 import { motion } from "framer-motion";
 
 const steps = [
-  { icon: Handshake, title: "School Partners with UGS", description: "Establish a partnership agreement and define program goals." },
-  { icon: ClipboardList, title: "Interest Discovery Survey", description: "Students complete a survey to identify their passions and strengths." },
-  { icon: Users, title: "Clubs Are Formed", description: "Students are grouped into interest-based clubs with matched trainers." },
-  { icon: CalendarCheck, title: "Weekly Activities Begin", description: "UGS trainers conduct engaging weekly sessions for each club." },
-  { icon: Award, title: "Student Showcase Events", description: "Students present projects and achievements in showcase events." },
+  { icon: Handshake, title: "Strategic Partnership", description: "We align with your institution's vision and co-design the program scope." },
+  { icon: ClipboardList, title: "Student Profiling", description: "Our proprietary survey maps every student's interests, strengths, and aspirations." },
+  { icon: Users, title: "Club Curation", description: "Students are placed into expertly matched clubs with dedicated UGS mentors." },
+  { icon: CalendarCheck, title: "Managed Delivery", description: "Weekly sessions run seamlessly — fully managed by our certified trainers." },
+  { icon: Award, title: "Showcase & Recognition", description: "Students present achievements at a prestigious showcase event for parents and faculty." },
 ];
 
 const HowItWorksSection = () => {
@@ -21,8 +21,11 @@ const HowItWorksSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Simple <span className="text-gradient-primary">Partnership Model</span> for Schools
+            Effortless <span className="text-gradient-primary">Implementation</span> for Your School
           </h2>
+          <p className="text-lg text-muted-foreground">
+            From partnership to showcase — we handle everything so you can focus on what matters.
+          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

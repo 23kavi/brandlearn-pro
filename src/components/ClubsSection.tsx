@@ -4,28 +4,28 @@ import { motion } from "framer-motion";
 const clubs = [
   {
     icon: Cpu,
-    title: "Innovation & Technology Club",
-    description: "Explore coding, robotics, AI concepts, and tech-driven problem solving through hands-on projects.",
+    title: "Innovation & Technology",
+    description: "From coding and robotics to AI fundamentals — students build the technical fluency that defines tomorrow's leaders.",
   },
   {
     icon: Briefcase,
-    title: "Entrepreneurship Club",
-    description: "Learn business thinking, startup basics, financial literacy, and how to turn ideas into action.",
+    title: "Entrepreneurship & Business",
+    description: "Startup thinking, financial literacy, and real-world problem solving — cultivating the entrepreneurial mindset from day one.",
   },
   {
     icon: Palette,
-    title: "Creative Arts Club",
-    description: "Express through visual arts, music, design, filmmaking, and creative storytelling.",
+    title: "Creative Arts & Design",
+    description: "Visual arts, filmmaking, design thinking, and storytelling — nurturing the creative confidence every student deserves.",
   },
   {
     icon: Medal,
-    title: "Sports Leadership Club",
-    description: "Develop sportsmanship, teamwork, fitness discipline, and leadership through athletic activities.",
+    title: "Sports & Leadership",
+    description: "Sportsmanship, team strategy, and fitness discipline — developing resilient leaders through competitive athletics.",
   },
   {
     icon: Mic,
-    title: "Public Speaking & Debate Club",
-    description: "Build confidence, articulation, critical thinking, and persuasion through speaking and debate.",
+    title: "Public Speaking & Debate",
+    description: "Articulation, critical reasoning, and persuasion — giving students the voice and confidence to stand out anywhere.",
   },
 ];
 
@@ -41,10 +41,10 @@ const ClubsSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            UGS <span className="text-gradient-primary">Student Clubs</span>
+            World-Class <span className="text-gradient-primary">Student Clubs</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Interest-based clubs that let students explore, create, and lead.
+            Five expertly designed verticals that transform your school into a hub of holistic excellence.
           </p>
         </motion.div>
 

@@ -5,26 +5,26 @@ const steps = [
   {
     icon: Search,
     step: "Step 1",
-    title: "Student Interest Discovery Survey",
-    description: "A structured survey helps identify each student's unique interests and talents.",
+    title: "Proprietary Student Interest Mapping",
+    description: "Our research-backed survey precisely identifies each student's strengths, passions, and growth areas.",
   },
   {
     icon: Users,
     step: "Step 2",
-    title: "Formation of Interest-Based Clubs",
-    description: "Students are grouped into clubs based on their passions and interests.",
+    title: "Curated Club Formation",
+    description: "Students are strategically grouped into high-impact clubs aligned with their aspirations and your institution's goals.",
   },
   {
     icon: Presentation,
     step: "Step 3",
-    title: "Trainer-Led Weekly Activities",
-    description: "Expert trainers conduct engaging weekly sessions tailored to each club.",
+    title: "Expert-Led Weekly Sessions",
+    description: "Certified UGS mentors deliver structured, curriculum-grade sessions — no additional workload for your staff.",
   },
   {
     icon: Trophy,
     step: "Step 4",
-    title: "Projects, Competitions & Showcases",
-    description: "Students showcase their growth through projects, competitions, and events.",
+    title: "Showcase, Compete & Certify",
+    description: "Students demonstrate mastery through competitions, exhibitions, and recognized certifications that elevate your school's brand.",
   },
 ];
 
@@ -41,10 +41,10 @@ const SolutionSection = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             The UGS{" "}
-            <span className="text-gradient-primary">Student Development System</span>
+            <span className="text-gradient-primary">Proven Framework</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A proven, structured approach to unlock every student's potential.
+            A turnkey, end-to-end system designed to deliver measurable student transformation — effortlessly.
           </p>
         </motion.div>
 
