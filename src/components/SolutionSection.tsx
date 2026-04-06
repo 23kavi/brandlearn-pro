@@ -82,7 +82,6 @@ const SolutionSection = () => {
                 >
                   <step.icon className="w-6 h-6 text-primary-foreground" />
                 </motion.div>
-                </div>
 
                 <div className="flex-1 hidden md:block" />
               </motion.div>
