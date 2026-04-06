@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const trialFeatures = [
-  "Full access to one club of your choice",
-  "Trainer-led interactive sessions",
-  "Skill-building activities & projects",
-  "No commitment — cancel anytime",
-  "Experience real program impact",
+  "Complete access to any one premium club",
+  "Fully managed sessions by certified UGS mentors",
+  "Hands-on skill-building activities & projects",
+  "Zero commitment — no strings attached",
+  "Experience measurable student impact firsthand",
 ];
 
 const FreeTrialSection = () => {
@@ -35,15 +35,15 @@ const FreeTrialSection = () => {
                 >
                   <div className="inline-flex items-center gap-2 bg-primary-foreground/20 text-primary-foreground px-4 py-2 rounded-full mb-6">
                     <Clock size={16} />
-                    <span className="text-sm font-semibold">7-Day Free Trial</span>
+                    <span className="text-sm font-semibold">Complimentary 7-Day Trial</span>
                   </div>
 
                   <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-                    Try the Program <span className="opacity-90">Risk-Free</span>
+                    See the Impact <span className="opacity-90">Before You Commit</span>
                   </h2>
 
                   <p className="text-primary-foreground/80 text-lg mb-8">
-                    Experience the impact of UGS clubs with a complimentary 7-day trial session. See the transformation firsthand.
+                    We're confident in our program — that's why we invite every school to experience it free for 7 days. No obligations, no fine print. Just results.
                   </p>
 
                   <Button
@@ -52,7 +52,7 @@ const FreeTrialSection = () => {
                     asChild
                   >
                     <a href="#contact">
-                      Start Free Trial
+                      Request Your Free Trial
                       <ArrowRight size={20} />
                     </a>
                   </Button>

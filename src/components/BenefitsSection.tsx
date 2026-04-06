@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 const benefits = [
   {
     icon: BadgeCheck,
-    title: "Certification of Completion",
-    description: "Every student receives an official UGS certificate recognizing their achievement and skill development.",
+    title: "Official UGS Certification",
+    description: "Every participant receives a recognized certificate of completion — a credential that strengthens college applications and student portfolios.",
   },
   {
     icon: Share2,
-    title: "Social Media & Website Shoutout",
-    description: "Outstanding students get featured on our website and social media pages for their accomplishments.",
+    title: "Public Recognition & Spotlight",
+    description: "Top-performing students are featured on our official website and social media — giving your school visible proof of student excellence.",
   },
   {
     icon: Handshake,
-    title: "Sponsorship Opportunities",
-    description: "Highly talented students gain access to sponsorship opportunities to further their passion and skills.",
+    title: "Exclusive Sponsorship Access",
+    description: "Exceptionally talented students unlock sponsorship pathways — connecting your institution to opportunities most schools can't offer.",
   },
   {
     icon: Trophy,
-    title: "Student Showcase Event",
-    description: "Present your projects at a grand showcase event in front of parents, teachers, and community leaders.",
+    title: "Prestigious Showcase Event",
+    description: "A grand exhibition where students present their work to parents, faculty, and community leaders — elevating your school's brand.",
   },
   {
     icon: Star,
-    title: "Portfolio Building",
-    description: "Students build a real portfolio of projects and experiences that set them apart for future opportunities.",
+    title: "Real-World Portfolio",
+    description: "Students graduate with a tangible portfolio of projects and achievements — setting them apart for higher education and beyond.",
   },
   {
     icon: Award,
-    title: "Leadership Recognition",
-    description: "Top performers earn leadership badges and recommendation letters for academic and career growth.",
+    title: "Leadership Credentials",
+    description: "Outstanding students earn leadership badges and recommendation letters — powerful differentiators for academic and career advancement.",
   },
 ];
 
@@ -56,10 +56,10 @@ const BenefitsSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Program <span className="text-gradient-primary">Benefits</span>
+            Exclusive <span className="text-gradient-primary">Student Benefits</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Beyond learning — students earn recognition, opportunities, and real-world advantages.
+            Beyond learning — students earn credentials, recognition, and real-world advantages that set your school apart.
           </p>
         </motion.div>
 

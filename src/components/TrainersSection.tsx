@@ -2,11 +2,11 @@ import { Cpu, Briefcase, Medal, Mic, Palette } from "lucide-react";
 import { motion } from "framer-motion";
 
 const trainers = [
-  { icon: Briefcase, name: "Entrepreneurship Expert", specialty: "Entrepreneurship & Business", description: "Experienced in mentoring young entrepreneurs and building startup mindsets." },
-  { icon: Cpu, name: "Tech & Innovation Mentor", specialty: "Innovation & Technology", description: "Passionate about coding, robotics, and AI for students." },
-  { icon: Medal, name: "Sports Leadership Coach", specialty: "Sports & Leadership", description: "Developing sportsmanship, discipline, and team leadership skills." },
-  { icon: Mic, name: "Communication Trainer", specialty: "Public Speaking & Debate", description: "Helping students find their voice through structured debate and oratory." },
-  { icon: Palette, name: "Creative Arts Facilitator", specialty: "Creative Arts & Design", description: "Guiding students in visual arts, design thinking, and storytelling." },
+  { icon: Briefcase, name: "Business & Startup Mentor", specialty: "Entrepreneurship", description: "Industry professionals who instill business acumen and entrepreneurial thinking in young minds." },
+  { icon: Cpu, name: "Technology & Innovation Lead", specialty: "STEM & AI", description: "Certified tech educators bringing cutting-edge coding, robotics, and AI concepts to your campus." },
+  { icon: Medal, name: "Sports & Leadership Coach", specialty: "Athletics & Character", description: "Professional coaches developing discipline, resilience, and team leadership through competitive sports." },
+  { icon: Mic, name: "Communication & Debate Expert", specialty: "Oratory & Reasoning", description: "Experienced speakers training students in articulation, critical thinking, and persuasive communication." },
+  { icon: Palette, name: "Creative Arts Director", specialty: "Arts & Design", description: "Award-winning creatives guiding students through visual arts, design thinking, and storytelling mastery." },
 ];
 
 const TrainersSection = () => {
@@ -21,10 +21,10 @@ const TrainersSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Expert <span className="text-gradient-primary">Mentors & Trainers</span>
+            Handpicked <span className="text-gradient-primary">Industry Mentors</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            UGS programs are guided by experienced trainers across diverse domains.
+            Every UGS mentor is vetted, trained, and passionate — delivering a caliber of instruction your school can be proud of.
           </p>
         </motion.div>
 

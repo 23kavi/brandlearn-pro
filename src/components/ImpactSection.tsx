@@ -2,22 +2,22 @@ import { School, GraduationCap, TrendingUp, Users, Lightbulb, MessageSquare, Hea
 import { motion } from "framer-motion";
 
 const schoolBenefits = [
-  { icon: TrendingUp, text: "Stronger student engagement" },
-  { icon: School, text: "Structured extracurricular ecosystem" },
-  { icon: Users, text: "Improved student participation" },
+  { icon: TrendingUp, text: "Elevated institutional reputation & parent satisfaction" },
+  { icon: School, text: "Fully managed extracurricular infrastructure" },
+  { icon: Users, text: "Measurably higher student participation & retention" },
 ];
 
 const studentBenefits = [
-  { icon: Heart, text: "Confidence building" },
-  { icon: Award, text: "Leadership development" },
-  { icon: Lightbulb, text: "Creativity and innovation" },
-  { icon: MessageSquare, text: "Teamwork and communication" },
+  { icon: Heart, text: "Unshakeable confidence & self-belief" },
+  { icon: Award, text: "Proven leadership & collaboration skills" },
+  { icon: Lightbulb, text: "Creative thinking & innovation mindset" },
+  { icon: MessageSquare, text: "Communication mastery & teamwork" },
 ];
 
 const metrics = [
-  { value: "500+", label: "Students Engaged" },
-  { value: "20+", label: "Club Activities / Semester" },
-  { value: "10+", label: "Skills Explored" },
+  { value: "500+", label: "Students Transformed" },
+  { value: "20+", label: "Curated Activities / Semester" },
+  { value: "10+", label: "Future-Ready Skills Developed" },
 ];
 
 const ImpactSection = () => {
@@ -32,8 +32,11 @@ const ImpactSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Impact of the <span className="text-gradient-primary">UGS Program</span>
+            Measurable <span className="text-gradient-primary">Outcomes</span> That Matter
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Real results for your institution and your students — backed by data, delivered with excellence.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
@@ -45,7 +48,7 @@ const ImpactSection = () => {
             className="bg-card p-8 rounded-2xl shadow-card border border-border"
           >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
-              <School className="w-5 h-5 text-primary" /> For Schools
+              <School className="w-5 h-5 text-primary" /> For Your Institution
             </h3>
             <ul className="space-y-4">
               {schoolBenefits.map((b) => (
@@ -67,7 +70,7 @@ const ImpactSection = () => {
             className="bg-card p-8 rounded-2xl shadow-card border border-border"
           >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-accent" /> For Students
+              <GraduationCap className="w-5 h-5 text-accent" /> For Your Students
             </h3>
             <ul className="space-y-4">
               {studentBenefits.map((b) => (

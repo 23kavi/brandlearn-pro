@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "UGS programs helped our students become more confident and collaborative. We've seen a remarkable transformation in student engagement.",
+    quote: "UGS brought a level of professionalism and structure to our extracurricular program that we couldn't achieve on our own. The transformation in student confidence has been remarkable.",
     author: "School Principal",
-    role: "Partner School",
+    role: "Partner Institution",
   },
   {
-    quote: "The structured club activities gave our students a platform to explore their interests. The trainers are exceptional and truly care about student growth.",
-    author: "Senior Teacher",
-    role: "Partner School",
+    quote: "As educators, we were relieved to see a program that truly handles everything — from planning to execution. Our students are more engaged than ever, and parents have noticed the difference.",
+    author: "Senior Academic Coordinator",
+    role: "Partner Institution",
   },
   {
-    quote: "I discovered my passion for entrepreneurship through the UGS club. It changed how I think about problems and solutions.",
-    author: "Student",
+    quote: "The Entrepreneurship Club didn't just teach me business — it taught me how to think differently. I now see opportunities everywhere. UGS changed my perspective completely.",
+    author: "Class 10 Student",
     role: "Entrepreneurship Club Member",
   },
 ];
@@ -31,8 +31,11 @@ const TestimonialsSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            What Schools <span className="text-gradient-primary">Say</span>
+            Trusted by <span className="text-gradient-primary">Leading Schools</span>
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Hear from the educators and students who've experienced the UGS difference.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
