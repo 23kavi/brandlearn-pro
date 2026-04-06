@@ -36,12 +36,13 @@ const TrainersSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card p-6 rounded-xl shadow-card border border-border text-center hover:shadow-card-hover transition-all duration-300"
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              className="group bg-card p-6 rounded-xl shadow-card border border-border text-center hover:shadow-card-hover hover-glow transition-all duration-300 cursor-default"
             >
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <trainer.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-1">{trainer.name}</h3>
+              <h3 className="text-lg font-bold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">{trainer.name}</h3>
               <p className="text-primary text-sm font-medium mb-2">{trainer.specialty}</p>
               <p className="text-muted-foreground text-sm">{trainer.description}</p>
             </motion.div>

@@ -64,7 +64,7 @@ const SolutionSection = () => {
                 }`}
               >
                 <div className="flex-1">
-                  <div className="bg-card p-6 rounded-xl shadow-card border border-border">
+                  <div className="bg-card p-6 rounded-xl shadow-card border border-border hover:shadow-card-hover hover-glow transition-all duration-300 group">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">
                       {step.step}
                     </span>
@@ -75,8 +75,13 @@ const SolutionSection = () => {
                   </div>
                 </div>
 
-                <div className="relative z-10 w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center shadow-button shrink-0">
+                <motion.div 
+                  className="relative z-10 w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center shadow-button shrink-0"
+                  whileHover={{ scale: 1.15, rotate: 10 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <step.icon className="w-6 h-6 text-primary-foreground" />
+                </motion.div>
                 </div>
 
                 <div className="flex-1 hidden md:block" />

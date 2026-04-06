@@ -56,12 +56,13 @@ const ClubsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+              whileHover={{ y: -8, transition: { duration: 0.25 } }}
+              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover-glow cursor-default"
             >
-              <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                 <club.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                 {club.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

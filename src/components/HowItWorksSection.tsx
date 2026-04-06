@@ -39,9 +39,13 @@ const HowItWorksSection = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative text-center"
               >
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-button">
+                <motion.div 
+                  className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-button"
+                  whileHover={{ scale: 1.15, rotate: -10 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
                   <step.icon className="w-7 h-7 text-primary-foreground" />
-                </div>
+                </motion.div>
                 <div className="absolute top-8 left-[60%] right-0 h-0.5 bg-border hidden md:block last:hidden" 
                   style={{ display: index === steps.length - 1 ? 'none' : undefined }} />
                 <h3 className="text-sm font-bold text-foreground mb-1">{step.title}</h3>

@@ -52,9 +52,10 @@ const ProblemSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card p-6 rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+              whileHover={{ y: -8, transition: { duration: 0.25 } }}
+              className="group bg-card p-6 rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover-glow cursor-default"
             >
-              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-destructive/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-destructive/20 group-hover:scale-110 transition-all duration-300">
                 <problem.icon className="w-6 h-6 text-destructive" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
