@@ -144,4 +144,52 @@
   .shadow-button {
     box-shadow: var(--shadow-button);
   }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  .hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 24px -4px hsl(175 65% 38% / 0.3);
+    border-color: hsl(175 65% 38% / 0.4);
+  }
+
+  .icon-bounce {
+    @apply transition-transform duration-300;
+  }
+  .icon-bounce:hover {
+    animation: iconBounce 0.5s ease;
+  }
+
+  @keyframes iconBounce {
+    0%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-6px); }
+    60% { transform: translateY(-3px); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .hover-shimmer:hover .text-gradient-primary {
+    background-size: 200% auto;
+    animation: shimmer 2s linear infinite;
+  }
 }

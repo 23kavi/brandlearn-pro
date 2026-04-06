@@ -36,9 +36,10 @@ const ContactSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card p-8 rounded-xl shadow-card border border-border text-center hover:shadow-card-hover transition-all duration-300"
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                className="group bg-card p-8 rounded-xl shadow-card border border-border text-center hover:shadow-card-hover hover-glow transition-all duration-300 cursor-default"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>

@@ -34,7 +34,7 @@ const ProgramStructureSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-start gap-6 bg-card p-6 rounded-xl shadow-card border border-border hover:shadow-card-hover transition-all duration-300"
+              className="flex items-start gap-6 bg-card p-6 rounded-xl shadow-card border border-border hover:shadow-card-hover hover-glow transition-all duration-300 group cursor-default"
             >
               <div className="shrink-0 w-24 text-center">
                 <span className="inline-block bg-gradient-primary text-primary-foreground text-xs font-bold px-3 py-1.5 rounded-full">

@@ -46,9 +46,10 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="bg-card p-8 rounded-2xl shadow-card border border-border"
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              className="group bg-card p-8 rounded-2xl shadow-card border border-border hover:shadow-card-hover hover-glow transition-all duration-300 cursor-default"
             >
-              <Quote className="w-8 h-8 text-primary/30 mb-4" />
+              <Quote className="w-8 h-8 text-primary/30 mb-4 group-hover:text-primary/60 group-hover:scale-110 transition-all duration-300" />
               <p className="text-foreground mb-6 leading-relaxed italic">
                 "{testimonial.quote}"
               </p>

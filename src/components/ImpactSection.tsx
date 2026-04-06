@@ -45,7 +45,7 @@ const ImpactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-card p-8 rounded-2xl shadow-card border border-border"
+            className="bg-card p-8 rounded-2xl shadow-card border border-border hover:shadow-card-hover hover-glow transition-all duration-300"
           >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <School className="w-5 h-5 text-primary" /> For Your Institution
@@ -67,7 +67,7 @@ const ImpactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-card p-8 rounded-2xl shadow-card border border-border"
+            className="bg-card p-8 rounded-2xl shadow-card border border-border hover:shadow-card-hover hover-glow transition-all duration-300"
           >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <GraduationCap className="w-5 h-5 text-accent" /> For Your Students

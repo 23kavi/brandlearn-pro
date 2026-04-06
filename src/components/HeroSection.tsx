@@ -70,18 +70,18 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="grid grid-cols-3 gap-8 mt-16 max-w-lg mx-auto"
           >
-            <div className="text-center">
+            <motion.div className="text-center" whileHover={{ scale: 1.08 }} transition={{ type: "spring", stiffness: 300 }}>
               <p className="text-3xl md:text-4xl font-bold text-primary">500+</p>
               <p className="text-sm text-muted-foreground mt-1">Students Engaged</p>
-            </div>
-            <div className="text-center">
+            </motion.div>
+            <motion.div className="text-center" whileHover={{ scale: 1.08 }} transition={{ type: "spring", stiffness: 300 }}>
               <p className="text-3xl md:text-4xl font-bold text-primary">20+</p>
               <p className="text-sm text-muted-foreground mt-1">Club Activities</p>
-            </div>
-            <div className="text-center">
+            </motion.div>
+            <motion.div className="text-center" whileHover={{ scale: 1.08 }} transition={{ type: "spring", stiffness: 300 }}>
               <p className="text-3xl md:text-4xl font-bold text-primary">10+</p>
               <p className="text-sm text-muted-foreground mt-1">Skills Explored</p>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
