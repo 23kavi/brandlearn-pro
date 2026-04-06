@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 // Lazy-load below-the-fold sections for faster initial paint
 const ProblemSection = lazy(() => import("@/components/ProblemSection"));
@@ -51,6 +52,7 @@ const Index = () => {
       <Suspense fallback={<SectionFallback />}>
         <Footer />
       </Suspense>
+      <FloatingWhatsApp />
     </div>
   );
 };
