@@ -24,7 +24,7 @@ const HeroSection = () => {
           >
             <Sparkles size={16} />
             <span className="text-sm font-medium">
-              Leadership, Innovation, and Creativity Beyond Classrooms
+              Trusted by Forward-Thinking Schools Across India
             </span>
           </motion.div>
 
@@ -34,8 +34,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight"
           >
-            Empowering the Next Generation of{" "}
-            <span className="text-gradient-primary">Global Scholars</span>
+            The Premier Student Development Partner for{" "}
+            <span className="text-gradient-primary">Visionary Schools</span>
           </motion.h1>
 
           <motion.p
@@ -44,7 +44,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            UGS partners with schools to create structured student clubs where learners explore innovation, entrepreneurship, creativity, sports, and leadership beyond traditional academics.
+            UGS delivers a turnkey, world-class extracurricular ecosystem — equipping your institution with expertly managed student clubs in innovation, entrepreneurship, arts, sports, and leadership. Zero burden on your faculty. Maximum impact on your students.
           </motion.p>
 
           <motion.div
@@ -55,12 +55,12 @@ const HeroSection = () => {
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Partner With UGS
+                Schedule a School Consultation
                 <ArrowRight size={20} />
               </a>
             </Button>
             <Button variant="hero-outline" size="xl" asChild>
-              <a href="#pilot">Start a Pilot Program</a>
+              <a href="#pilot">Request a Free Pilot</a>
             </Button>
           </motion.div>
 
