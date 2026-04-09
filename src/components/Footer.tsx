@@ -14,7 +14,7 @@ const Footer = () => {
               United Global Scholars — building a global network of student clubs and leadership programs to nurture innovation, creativity, and entrepreneurial thinking.
             </p>
             <div className="flex gap-4 mt-4">
-              <a href="https://wa.me/917358789363" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-colors" aria-label="WhatsApp">="https://wa.me/917358789363" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-colors" aria-label="WhatsApp"> target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-colors" aria-label="WhatsApp">
+              <a href="https://wa.me/917358789363" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-colors" aria-label="WhatsApp">
                 <MessageCircle className="w-5 h-5 text-primary-foreground" />
               </a>
               <a href="https://instagram.com/ugs.careers" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-full flex items-center justify-center transition-colors" aria-label="Instagram">
