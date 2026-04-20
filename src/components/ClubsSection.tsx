@@ -1,4 +1,4 @@
-import { Cpu, Briefcase, Palette, Medal, Mic } from "lucide-react";
+import { Cpu, Briefcase, Palette, Medal, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const clubs = [
@@ -25,9 +25,9 @@ const clubs = [
     comingSoon: true,
   },
   {
-    icon: Mic,
-    title: "Public Speaking & Debate",
-    description: "Articulation, critical reasoning, and persuasion — giving students the voice and confidence to stand out anywhere.",
+    icon: Sparkles,
+    title: "Soft Skills & Personality Development",
+    description: "Communication, public speaking, emotional intelligence, and confidence building — equipping students with the personal presence to thrive anywhere.",
   },
 ];
 
