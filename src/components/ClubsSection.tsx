@@ -1,4 +1,4 @@
-import { Cpu, Briefcase, Palette, Medal, Sparkles } from "lucide-react";
+import { Cpu, Briefcase, Palette, Medal, Sparkles, Video } from "lucide-react";
 import { motion } from "framer-motion";
 
 const clubs = [
@@ -28,6 +28,12 @@ const clubs = [
     icon: Sparkles,
     title: "Soft Skills & Personality Development",
     description: "Communication, public speaking, emotional intelligence, and confidence building — equipping students with the personal presence to thrive anywhere.",
+  },
+  {
+    icon: Video,
+    title: "Digital Creators & Content Studio",
+    description: "Reel making, short-form video, storytelling, and personal branding — empowering students to become the next generation of creators and digital influencers.",
+    comingSoon: true,
   },
 ];
 
