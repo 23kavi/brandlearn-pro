@@ -10,17 +10,17 @@ const benefits = [
   {
     icon: Share2,
     title: "Public Recognition & Spotlight",
-    description: "Top-performing students are featured on our official website and social media — giving your school visible proof of student excellence.",
+    description: "Top-performing students are featured on our official website and social media — giving your institution visible proof of student excellence.",
   },
   {
     icon: Handshake,
     title: "Exclusive Sponsorship Access",
-    description: "Exceptionally talented students unlock sponsorship pathways — connecting your institution to opportunities most schools can't offer.",
+    description: "Exceptionally talented students unlock sponsorship pathways — connecting your school or college to opportunities most institutions can't offer.",
   },
   {
     icon: Trophy,
     title: "Prestigious Showcase Event",
-    description: "A grand exhibition where students present their work to parents, faculty, and community leaders — elevating your school's brand.",
+    description: "A grand exhibition where students present their work to parents, faculty, and community leaders — elevating your institution's brand.",
   },
   {
     icon: Star,
@@ -59,7 +59,7 @@ const BenefitsSection = () => {
             Exclusive <span className="text-gradient-primary">Student Benefits</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Beyond learning — students earn credentials, recognition, and real-world advantages that set your school apart.
+            Beyond learning — students earn credentials, recognition, and real-world advantages that set your institution apart.
           </p>
         </motion.div>
 

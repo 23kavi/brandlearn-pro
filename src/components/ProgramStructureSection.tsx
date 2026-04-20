@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const phases = [
-  { weeks: "Week 1–2", title: "Discovery & Onboarding", description: "Student profiling, interest mapping, and strategic club formation — tailored to your school." },
+  { weeks: "Week 1–2", title: "Discovery & Onboarding", description: "Student profiling, interest mapping, and strategic club formation — tailored to your institution." },
   { weeks: "Week 3–10", title: "Expert-Led Development", description: "Structured weekly sessions with skill-building projects, mentorship, and progressive challenges." },
   { weeks: "Week 11", title: "Capstone Project Sprint", description: "Students refine their final projects under dedicated mentor guidance — preparing for the spotlight." },
   { weeks: "Week 12", title: "Grand Showcase & Certification", description: "A prestigious event where students present achievements to parents, faculty, and community leaders." },

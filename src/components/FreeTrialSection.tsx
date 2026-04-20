@@ -43,7 +43,7 @@ const FreeTrialSection = () => {
                   </h2>
 
                   <p className="text-primary-foreground/80 text-lg mb-8">
-                    We're confident in our program — that's why we invite every school to experience it free for 7 days. No obligations, no fine print. Just results.
+                    We're confident in our program — that's why we invite every school and college to experience it free for 7 days. No obligations, no fine print. Just results.
                   </p>
 
                   <Button

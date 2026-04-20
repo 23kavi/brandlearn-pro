@@ -24,7 +24,7 @@ const TrainersSection = () => {
             Handpicked <span className="text-gradient-primary">Industry Mentors</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Every UGS mentor is vetted, trained, and passionate — delivering a caliber of instruction your school can be proud of.
+            Every UGS mentor is vetted, trained, and passionate — delivering a caliber of instruction your institution can be proud of.
           </p>
         </motion.div>
 

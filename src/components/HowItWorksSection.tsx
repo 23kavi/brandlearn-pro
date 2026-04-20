@@ -21,7 +21,7 @@ const HowItWorksSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Effortless <span className="text-gradient-primary">Implementation</span> for Your School
+            Effortless <span className="text-gradient-primary">Implementation</span> for Your Institution
           </h2>
           <p className="text-lg text-muted-foreground">
             From partnership to showcase — we handle everything so you can focus on what matters.

@@ -44,7 +44,7 @@ const ClubsSection = () => {
             World-Class <span className="text-gradient-primary">Student Clubs</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Five expertly designed verticals that transform your school into a hub of holistic excellence.
+            Five expertly designed verticals that transform your school or college into a hub of holistic excellence.
           </p>
         </motion.div>
 
