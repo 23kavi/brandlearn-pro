@@ -15,9 +15,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+    <header className="fixed top-4 left-4 right-4 md:left-8 md:right-8 z-50 bg-background/80 backdrop-blur-xl border border-border/60 rounded-full shadow-card transition-all duration-300">
+      <div className="px-4 md:px-6">
+        <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2">
             <img src={logo} alt="UGS - United Global Scholars" className="h-12 w-auto" loading="eager" fetchPriority="high" />
           </a>
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
+          <div className="md:hidden py-4 px-2 border-t border-border/60 animate-fade-in">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a

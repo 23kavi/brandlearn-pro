@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-20 bg-gradient-hero overflow-hidden"
+      className="relative min-h-screen flex items-center pt-32 md:pt-36 bg-gradient-hero overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -24,7 +24,7 @@ const HeroSection = () => {
           >
             <Sparkles size={16} />
             <span className="text-sm font-medium">
-              Trusted by Forward-Thinking Schools Across India
+              Trusted by Forward-Thinking Schools & Colleges Across India
             </span>
           </motion.div>
 
