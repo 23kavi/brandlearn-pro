@@ -16,11 +16,13 @@ const clubs = [
     icon: Palette,
     title: "Creative Arts & Design",
     description: "Visual arts, filmmaking, design thinking, and storytelling — nurturing the creative confidence every student deserves.",
+    comingSoon: true,
   },
   {
     icon: Medal,
     title: "Sports & Leadership",
     description: "Sportsmanship, team strategy, and fitness discipline — developing resilient leaders through competitive athletics.",
+    comingSoon: true,
   },
   {
     icon: Mic,
@@ -56,13 +58,22 @@ const ClubsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8, transition: { duration: 0.25 } }}
-              className="group bg-card p-8 rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover-glow cursor-default"
+              whileHover={{ y: club.comingSoon ? 0 : -8, transition: { duration: 0.25 } }}
+              className={`group relative bg-card p-8 rounded-2xl shadow-card transition-all duration-300 border border-border cursor-default ${
+                club.comingSoon
+                  ? "opacity-75"
+                  : "hover:shadow-card-hover hover-glow"
+              }`}
             >
-              <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+              {club.comingSoon && (
+                <span className="absolute top-4 right-4 bg-accent/15 text-accent text-xs font-semibold px-3 py-1 rounded-full border border-accent/30">
+                  Coming Soon
+                </span>
+              )}
+              <div className={`w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-5 transition-all duration-300 ${club.comingSoon ? "" : "group-hover:scale-110 group-hover:rotate-3"}`}>
                 <club.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+              <h3 className={`text-xl font-bold text-foreground mb-3 transition-colors duration-300 ${club.comingSoon ? "" : "group-hover:text-primary"}`}>
                 {club.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
