@@ -15,12 +15,12 @@ const problems = [
   {
     icon: Lightbulb,
     title: "Untapped Potential",
-    description: "Every school has future leaders, innovators, and creators — but without the right framework, their talents go undiscovered.",
+    description: "Every school and college has future leaders, innovators, and creators — but without the right framework, their talents go undiscovered.",
   },
   {
     icon: Users,
     title: "Engagement Gap",
-    description: "Parents and accreditation bodies expect more than academics. Schools need a structured way to deliver meaningful student engagement.",
+    description: "Parents, recruiters, and accreditation bodies expect more than academics. Institutions need a structured way to deliver meaningful student engagement.",
   },
 ];
 
@@ -37,7 +37,7 @@ const ProblemSection = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             The Challenges{" "}
-            <span className="text-gradient-primary">Schools Face Today</span>
+            <span className="text-gradient-primary">Schools & Colleges Face Today</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Modern institutions need more than textbooks — they need a partner who delivers holistic student outcomes.

@@ -35,7 +35,7 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-foreground mb-6 leading-tight"
           >
             The Premier Student Development Partner for{" "}
-            <span className="text-gradient-primary">Visionary Schools</span>
+            <span className="text-gradient-primary">Visionary Schools & Colleges</span>
           </motion.h1>
 
           <motion.p
@@ -55,7 +55,7 @@ const HeroSection = () => {
           >
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Schedule a School Consultation
+                Schedule an Institution Consultation
                 <ArrowRight size={20} />
               </a>
             </Button>

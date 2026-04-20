@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     question: "How much time does the program require each week?",
-    answer: "Each club session runs for just 1–2 hours per week, carefully designed to integrate seamlessly into your existing school schedule without disrupting academics.",
+    answer: "Each club session runs for just 1–2 hours per week, carefully designed to integrate seamlessly into your existing school or college schedule without disrupting academics.",
   },
   {
     question: "Does our faculty need to manage anything?",
@@ -20,8 +20,8 @@ const faqs = [
     answer: "A standard classroom or activity room is all you need. For technology clubs, computer access is beneficial but not mandatory. UGS provides all training materials, curricula, and resources.",
   },
   {
-    question: "Can the program scale across our entire school?",
-    answer: "Absolutely. UGS programs are architected to scale — from intimate pilot groups of 30 students to institution-wide rollouts with hundreds of participants across multiple clubs.",
+    question: "Can the program scale across our entire institution?",
+    answer: "Absolutely. UGS programs are architected to scale — from intimate pilot groups of 30 students to institution-wide rollouts with hundreds of participants across multiple clubs, suitable for both schools and colleges.",
   },
   {
     question: "Is there a way to try before we commit?",
@@ -44,7 +44,7 @@ const FAQSection = () => {
             Questions <span className="text-gradient-primary">Answered</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Everything school leaders need to know before partnering with UGS.
+            Everything school and college leaders need to know before partnering with UGS.
           </p>
         </motion.div>
 

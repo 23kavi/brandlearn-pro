@@ -24,7 +24,7 @@ const steps = [
     icon: Trophy,
     step: "Step 4",
     title: "Showcase, Compete & Certify",
-    description: "Students demonstrate mastery through competitions, exhibitions, and recognized certifications that elevate your school's brand.",
+    description: "Students demonstrate mastery through competitions, exhibitions, and recognized certifications that elevate your institution's brand.",
   },
 ];
 
