@@ -1,12 +1,13 @@
-import { Cpu, Briefcase, Medal, Mic, Palette } from "lucide-react";
+import { Cpu, Briefcase, Medal, Sparkles, Palette, Video } from "lucide-react";
 import { motion } from "framer-motion";
 
 const trainers = [
   { icon: Briefcase, name: "Business & Startup Mentor", specialty: "Entrepreneurship", description: "Industry professionals who instill business acumen and entrepreneurial thinking in young minds." },
   { icon: Cpu, name: "Technology & Innovation Lead", specialty: "STEM & AI", description: "Certified tech educators bringing cutting-edge coding, robotics, and AI concepts to your campus." },
   { icon: Medal, name: "Sports & Leadership Coach", specialty: "Athletics & Character", description: "Professional coaches developing discipline, resilience, and team leadership through competitive sports." },
-  { icon: Mic, name: "Communication & Debate Expert", specialty: "Oratory & Reasoning", description: "Experienced speakers training students in articulation, critical thinking, and persuasive communication." },
+  { icon: Sparkles, name: "Soft Skills & Personality Coach", specialty: "Communication & Confidence", description: "Seasoned trainers building public speaking, articulation, emotional intelligence, and personal presence in every student." },
   { icon: Palette, name: "Creative Arts Director", specialty: "Arts & Design", description: "Award-winning creatives guiding students through visual arts, design thinking, and storytelling mastery." },
+  { icon: Video, name: "Digital Creator & Content Strategist", specialty: "Reels, Video & Personal Branding", description: "Working creators and content professionals mentoring students in short-form video, reel production, scripting, on-camera presence, and building an authentic digital identity." },
 ];
 
 const TrainersSection = () => {
