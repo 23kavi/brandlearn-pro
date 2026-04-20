@@ -33,9 +33,9 @@ const FreeTrialSection = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
-                  <div className="inline-flex items-center gap-2 bg-primary-foreground/20 text-primary-foreground px-4 py-2 rounded-full mb-6">
+                  <div className="inline-flex items-center gap-2 bg-accent/90 text-accent-foreground px-4 py-2 rounded-full mb-6 font-semibold">
                     <Clock size={16} />
-                    <span className="text-sm font-semibold">Complimentary 7-Day Trial</span>
+                    <span className="text-sm">Complimentary 7-Day Trial — Coming Soon</span>
                   </div>
 
                   <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
@@ -43,7 +43,7 @@ const FreeTrialSection = () => {
                   </h2>
 
                   <p className="text-primary-foreground/80 text-lg mb-8">
-                    We're confident in our program — that's why we invite every school and college to experience it free for 7 days. No obligations, no fine print. Just results.
+                    Our complimentary 7-day trial is launching soon. Join the waitlist and your institution will be among the first to experience the UGS program — risk-free.
                   </p>
 
                   <Button
@@ -52,7 +52,7 @@ const FreeTrialSection = () => {
                     asChild
                   >
                     <a href="#contact">
-                      Request Your Free Trial
+                      Join the Waitlist
                       <ArrowRight size={20} />
                     </a>
                   </Button>
