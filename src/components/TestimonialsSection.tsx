@@ -9,8 +9,8 @@ const testimonials = [
   },
   {
     quote: "As educators, we were relieved to see a program that truly handles everything — from planning to execution. Our students are more engaged than ever, and parents have noticed the difference.",
-    author: "Senior Academic Coordinator",
-    role: "Partner Institution",
+    author: "Dean of Student Affairs",
+    role: "Partner College",
   },
   {
     quote: "The Entrepreneurship Club didn't just teach me business — it taught me how to think differently. I now see opportunities everywhere. UGS changed my perspective completely.",
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Trusted by <span className="text-gradient-primary">Leading Schools</span>
+            Trusted by <span className="text-gradient-primary">Leading Schools & Colleges</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Hear from the educators and students who've experienced the UGS difference.
