@@ -1,4 +1,4 @@
-import { Handshake, ClipboardList, Users, CalendarCheck, Award } from "lucide-react";
+import { Handshake, ClipboardList, Users, CalendarCheck, Award, Monitor, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const steps = [
@@ -53,6 +53,35 @@ const HowItWorksSection = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-14 max-w-3xl mx-auto"
+          >
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-card hover-glow transition-all duration-300">
+              <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <div className="flex gap-3 shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+                    <Monitor className="w-6 h-6 text-accent" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">
+                    Offline <span className="text-muted-foreground font-normal">or</span> Online — Your Choice
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    Every program is delivered flexibly — on-campus, fully online, or hybrid — based on your school or college's schedule, infrastructure, and student convenience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
