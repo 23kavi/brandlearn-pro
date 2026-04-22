@@ -93,19 +93,38 @@ const ChallengeSolutionMapSection = () => {
           {mappings.map((item, index) => (
             <motion.div
               key={item.challenge.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ staggerChildren: 0.15, delayChildren: index * 0.05 }}
               className="grid md:grid-cols-[1fr_auto_1.4fr] gap-4 md:gap-6 items-stretch"
             >
               {/* Challenge card */}
-              <div className="bg-card border border-border rounded-xl p-6 shadow-card relative overflow-hidden">
-                <div className="absolute top-0 left-0 h-1 w-full bg-destructive/60" />
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -40, y: 10 },
+                  visible: { opacity: 1, x: 0, y: 0 },
+                }}
+                transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -4, transition: { duration: 0.25 } }}
+                className="bg-card border border-border rounded-xl p-6 shadow-card relative overflow-hidden hover:shadow-card-hover transition-shadow duration-300"
+              >
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, delay: index * 0.05, ease: "easeOut" }}
+                  style={{ transformOrigin: "left" }}
+                  className="absolute top-0 left-0 h-1 w-full bg-destructive/60"
+                />
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0">
+                  <motion.div
+                    whileHover={{ rotate: -8, scale: 1.08 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0"
+                  >
                     <item.challenge.icon className="w-5 h-5 text-destructive" />
-                  </div>
+                  </motion.div>
                   <span className="text-[11px] font-semibold text-destructive uppercase tracking-wider">
                     The Challenge
                   </span>
@@ -114,30 +133,89 @@ const ChallengeSolutionMapSection = () => {
                   {item.challenge.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">{item.challenge.pain}</p>
-              </div>
+              </motion.div>
 
               {/* Arrow */}
-              <div className="flex md:flex-col items-center justify-center">
-                <div className="hidden md:block w-px h-6 bg-border" />
+              <div className="flex md:flex-col items-center justify-center relative">
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.6 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ scaleY: 0 }}
+                  whileInView={{ scaleY: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
-                  className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center shadow-button"
+                  transition={{ duration: 0.4, delay: index * 0.05 + 0.1 }}
+                  style={{ transformOrigin: "top" }}
+                  className="hidden md:block w-px h-6 bg-border"
+                />
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.4, rotate: -45 },
+                    visible: { opacity: 1, scale: 1, rotate: 0 },
+                  }}
+                  transition={{ type: "spring", stiffness: 260, damping: 14 }}
+                  whileHover={{ scale: 1.15 }}
+                  className="relative w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center shadow-button"
                 >
-                  <ArrowRight className="w-5 h-5 text-primary-foreground rotate-90 md:rotate-0" />
+                  <motion.span
+                    aria-hidden
+                    className="absolute inset-0 rounded-full bg-primary/40"
+                    animate={{ scale: [1, 1.6, 1.6], opacity: [0.6, 0, 0] }}
+                    transition={{
+                      duration: 2.2,
+                      repeat: Infinity,
+                      delay: index * 0.4,
+                      ease: "easeOut",
+                    }}
+                  />
+                  <motion.div
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                    className="hidden md:block"
+                  >
+                    <ArrowRight className="w-5 h-5 text-primary-foreground" />
+                  </motion.div>
+                  <motion.div
+                    animate={{ y: [0, 4, 0] }}
+                    transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                    className="md:hidden"
+                  >
+                    <ArrowRight className="w-5 h-5 text-primary-foreground rotate-90" />
+                  </motion.div>
                 </motion.div>
-                <div className="hidden md:block w-px h-6 bg-border" />
+                <motion.div
+                  initial={{ scaleY: 0 }}
+                  whileInView={{ scaleY: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 + 0.3 }}
+                  style={{ transformOrigin: "top" }}
+                  className="hidden md:block w-px h-6 bg-border"
+                />
               </div>
 
               {/* Solution card */}
-              <div className="bg-card border border-primary/30 rounded-xl p-6 shadow-card hover:shadow-card-hover hover-glow transition-all duration-300 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-primary" />
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: 40, y: 10 },
+                  visible: { opacity: 1, x: 0, y: 0 },
+                }}
+                transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                className="bg-card border border-primary/30 rounded-xl p-6 shadow-card hover:shadow-card-hover hover-glow transition-all duration-300 relative overflow-hidden group"
+              >
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.05 + 0.2, ease: "easeOut" }}
+                  style={{ transformOrigin: "left" }}
+                  className="absolute top-0 left-0 h-1 w-full bg-gradient-primary"
+                />
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <motion.div
+                    whileHover={{ rotate: 8, scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors"
+                  >
                     <item.solution.icon className="w-5 h-5 text-primary" />
-                  </div>
+                  </motion.div>
                   <span className="text-[11px] font-semibold text-primary uppercase tracking-wider">
                     The UGS Solution
                   </span>
@@ -148,18 +226,29 @@ const ChallengeSolutionMapSection = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   {item.solution.description}
                 </p>
-                <ul className="space-y-1.5">
+                <motion.ul
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ staggerChildren: 0.08, delayChildren: index * 0.05 + 0.4 }}
+                  className="space-y-1.5"
+                >
                   {item.solution.features.map((feature) => (
-                    <li
+                    <motion.li
                       key={feature}
+                      variants={{
+                        hidden: { opacity: 0, x: -10 },
+                        visible: { opacity: 1, x: 0 },
+                      }}
+                      transition={{ duration: 0.35 }}
                       className="flex items-start gap-2 text-sm text-foreground/80"
                     >
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                       <span>{feature}</span>
-                    </li>
+                    </motion.li>
                   ))}
-                </ul>
-              </div>
+                </motion.ul>
+              </motion.div>
             </motion.div>
           ))}
         </div>
