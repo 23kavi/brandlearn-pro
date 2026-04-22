@@ -5,6 +5,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 // Lazy-load below-the-fold sections for faster initial paint
 const ProblemSection = lazy(() => import("@/components/ProblemSection"));
+const ChallengeSolutionMapSection = lazy(() => import("@/components/ChallengeSolutionMapSection"));
 const SolutionSection = lazy(() => import("@/components/SolutionSection"));
 const ClubsSection = lazy(() => import("@/components/ClubsSection"));
 const HowItWorksSection = lazy(() => import("@/components/HowItWorksSection"));
@@ -34,6 +35,7 @@ const Index = () => {
         <HeroSection />
         <Suspense fallback={<SectionFallback />}>
           <ProblemSection />
+          <ChallengeSolutionMapSection />
           <SolutionSection />
           <ClubsSection />
           <HowItWorksSection />
