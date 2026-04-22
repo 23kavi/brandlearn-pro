@@ -1,4 +1,4 @@
-import { BookOpen, Clock, Lightbulb, Users } from "lucide-react";
+import { BookOpen, Clock, Lightbulb, Users, LayoutGrid, BarChart3, Award } from "lucide-react";
 import { motion } from "framer-motion";
 
 const problems = [
@@ -11,6 +11,21 @@ const problems = [
     icon: Clock,
     title: "Faculty Bandwidth",
     description: "Your teachers are already stretched thin. Running quality extracurricular programs shouldn't fall on their shoulders.",
+  },
+  {
+    icon: LayoutGrid,
+    title: "No Structured Curriculum",
+    description: "Most extracurricular activities lack a defined syllabus or progression — leaving students with scattered exposure instead of real skill-building.",
+  },
+  {
+    icon: BarChart3,
+    title: "No Measurable Outcomes",
+    description: "Without clear KPIs, assessments, or progress tracking, schools and colleges can't demonstrate the real impact of co-curricular efforts.",
+  },
+  {
+    icon: Award,
+    title: "No Recognised Platforms",
+    description: "Students lack credible stages, certifications, and showcases to validate their talent — limiting visibility to parents, recruiters, and universities.",
   },
   {
     icon: Lightbulb,
@@ -44,7 +59,7 @@ const ProblemSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {problems.map((problem, index) => (
             <motion.div
               key={problem.title}
