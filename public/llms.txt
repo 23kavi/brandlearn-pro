@@ -1,7 +1,39 @@
 # United Global Scholars (UGS)
 
-> UGS partners with schools and colleges to deliver expert-led student clubs in innovation, entrepreneurship, arts, sports and leadership — fully managed, with zero burden on faculty.
+> UGS is a student-development partner for schools and colleges in India. We deliver expert-led, fully-managed student clubs — innovation, entrepreneurship, arts, sports and leadership — through a structured 12-week semester model, with zero burden on faculty.
+
+## About
+
+- **Tagline:** Leadership, Innovation, and Creativity Beyond Classrooms.
+- **Audience:** School and college leadership teams (principals, directors, deans).
+- **Delivery:** Offline or online, scheduled around the institution's calendar. 1–2 hours per club session per week.
+- **Format:** 12-Week Blueprint — Discovery & Onboarding → Expert-Led Development → Capstone Sprint → Grand Showcase & Certification.
+- **Mentors:** Industry-vetted mentors covering tech, entrepreneurship, arts, sports and digital media.
+
+## Programs / Clubs
+
+- Innovation & Technology Club — STEM projects, robotics, AI fundamentals.
+- Entrepreneurship Club — startup thinking, pitching, business basics.
+- Arts & Creativity Club — performing arts, visual arts, storytelling.
+- Sports & Wellness Club — structured sports development and team play.
+- Leadership Club — public speaking, civic projects, peer leadership.
+- Digital Creators & Content Studio (coming soon) — reels, short-form video, creator skills.
+
+## What schools get
+
+- Structured 12-week curriculum and weekly session plans.
+- Trained UGS mentors who run every session — no faculty load.
+- Measurable outcome tracking and reports for each student.
+- UGS-recognised certifications, showcases and competitions.
+- Free 7-day trial session and a 3-month pilot program before any long-term commitment.
 
 ## Pages
 
-- [Home](/): Overview of UGS programs, clubs, 12-week blueprint, mentors, pilot offer, FAQs and contact details.
+- [Home](/): Overview, clubs, 12-week blueprint, mentors, pilot offer, FAQs and contact details.
+
+## Contact
+
+- Email: join@ugs-carrer.com
+- Phone / WhatsApp: +91 73587 89363
+- Instagram: https://instagram.com/ugs.careers
+- Partnership form: https://forms.gle/u6NW9tWMGFczmoR38
