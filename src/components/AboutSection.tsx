@@ -74,7 +74,7 @@ const AboutSection = () => {
               <User className="w-10 h-10 text-primary-foreground" />
             </div>
             <h4 className="text-xl font-bold text-foreground mb-1">Kavita Bharti</h4>
-            <p className="text-primary text-sm font-medium mb-4">Founder</p>
+            <p className="text-primary text-sm font-medium mb-4">Founder & CEO</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
               A visionary educator and strategic leader, Kavita founded UGS with a singular conviction: every school and college deserves a world-class extracurricular framework. Her expertise in education design and student engagement has shaped UGS into a trusted partner for forward-thinking institutions.
             </p>
@@ -89,10 +89,10 @@ const AboutSection = () => {
             <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-5">
               <User className="w-10 h-10 text-primary-foreground" />
             </div>
-            <h4 className="text-xl font-bold text-foreground mb-1">Nidhi Gupta</h4>
-            <p className="text-primary text-sm font-medium mb-4">Co-Founder</p>
+            <h4 className="text-xl font-bold text-foreground mb-1">Bhagyashree Bhandari</h4>
+            <p className="text-primary text-sm font-medium mb-4">Co-Founder & Managing Director</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Nidhi brings strategic depth and operational excellence to UGS. With a passion for scalable impact, she architects the systems that ensure every partner school and college receives a seamless, high-quality experience — from onboarding to student showcase.
+              Bhagyashree brings strategic depth and operational excellence to UGS. With a passion for scalable impact, she architects the systems that ensure every partner school and college receives a seamless, high-quality experience — from onboarding to student showcase.
             </p>
           </motion.div>
         </div>
